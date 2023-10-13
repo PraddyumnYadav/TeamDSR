@@ -567,6 +567,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -575,6 +580,10 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -591,6 +600,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .w-14 {
@@ -619,6 +632,11 @@ video {
   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -633,8 +651,17 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-white {
