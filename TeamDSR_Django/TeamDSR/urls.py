@@ -22,7 +22,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home")
+    path('', views.home, name="home"),
+    path('class9', views.class9, name="class9th"),
+    path('class10', views.class10, name="class10th"),
 ]
 
 if settings.DEBUG:
