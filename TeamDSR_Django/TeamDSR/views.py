@@ -78,6 +78,11 @@ def class9(request):
                 "pdf": "PDFs/Class 9th/Poverty as a Challenge.pdf",
                 "thumbnail": "Images/class9/poverty_as_a_challenge.webp",
             },
+            {
+                "name": "Climate",
+                "pdf": "PDFs/Class 9th/Climate one shot_231020_233358.pdf",
+                "thumbnail": "Images/class9/climate.webp"
+            }
         ]
     }
     return render(request, "class9.html", context=notes)
