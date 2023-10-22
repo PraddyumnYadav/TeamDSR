@@ -41,7 +41,7 @@ def class9(request):
             {
                 "name": "Constitutional Design",
                 "pdf": "PDFs/Class 9th/Constitutional Design one shot.pdf",
-                "thumbnail": "static/Images/class9/constituitional_design.webp",
+                "thumbnail": "Images/class9/constituitional_design.webp",
             },
             {
                 "name": "People as Resource",
