@@ -89,4 +89,58 @@ def class9(request):
 
 
 def class10(request):
-    return render(request, "class10.html")
+    notes = {
+        "notes": [
+            {
+                "name": "The Rise of Nationalism in Europe",
+                "pdf": "PDFs/Class 10th/Rise of Nationalism in Europe one shot revision.pdf",
+                "thumbnail": "Images/class10/the_rise_of_nationalism_in_europe.webp"
+            },
+            {
+                "name": "Resource and Development",
+                "pdf": "PDFs/Class 10th/Resources and Development one short revision.pdf",
+                "thumbnail": "Images/class10/resource_and_development.webp"
+            },
+            {
+                "name": "Power Sharing",
+                "pdf": "PDFs/Class 10th/power sharing one shot revision series-1.pdf",
+                "thumbnail": "Images/class10/power_sharing.webp"
+            },
+            {
+                "name": "Development",
+                "pdf": "PDFs/Class 10th/development one shot revision series.pdf",
+                "thumbnail": "Images/class10/development.webp"
+            },
+            {
+                "name": "Nationalism in India",
+                "pdf": "PDFs/Class 10th/Nationalism in India one shot revision_230921_194506.pdf",
+                "thumbnail": "Images/class10/nationalism_in_india.webp"
+            },
+            {
+                "name": "Forest and Wildlife Resources",
+                "pdf": "PDFs/Class 10th/Forest and Wildlife Resources one shot.pdf",
+                "thumbnail": "Images/class10/forest_and_widlife_resources.webp"
+            },
+            {
+                "name": "Fedralism",
+                "pdf": "PDFs/Class 10th/Federalism one shot.pdf",
+                "thumbnail": "Images/class10/fedralism.webp"
+            },
+            {
+                "name": "Gender, Religion and Caste",
+                "pdf": "PDFs/Class 10th/Gender , Religion and Caste one shot.pdf",
+                "thumbnail": "Images/class10/gender_religion_and_caste.webp"
+            },
+            {
+                "name": "Water Resources",
+                "pdf": "PDFs/Class 10th/Water Resources one shot.pdf",
+                "thumbnail": "Images/class10/water_resources.webp"
+            },
+            {
+                "name": "Water Resources Exam Pack",
+                "pdf": "PDFs/Class 10th/Water Resources - Exam Pack.pdf",
+                "thumbnail": "Images/class10/water_resources.webp"
+            }
+        ]
+    }
+    return render(request, "class10.html", context=notes)
