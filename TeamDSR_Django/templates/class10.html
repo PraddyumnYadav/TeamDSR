@@ -22,18 +22,20 @@
         </div>
     </div>
 
-    <div class="main-content h-screen grid items-center">
+    <div class="main-content grid items-center">
         <div class="text-and-img">
             <img class="rounded-full mx-auto my-2" src="{% static 'Images/digraj_sir.jpg' %}" alt="Digraj Sir">
             <h1 class="text-3xl sm:text-5xl font-bold text-center">TeamDSR - Class10th Notes and Practice</h1>
         </div>
         <div class="Notes mx-5 my-20">
+            {% for note in notes %}
             <div class="flex rounded-3xl shadow-2xl my-5 sm:w-1/2 mx-auto hover:bg-slate-200">
-                <img class="rounded-l-3xl" src="{% static 'Images/class9/the_french_revolution.webp' %}" alt="Class 9th Thumbnail">
-                <a href="PDFs/Class 9th/The French Revolution one shot revision.pdf"
-                    class="text-xl sm:text-3xl font-bold my-auto mx-5">The French Revolution.</a>
+                <img class="rounded-l-3xl" src="{% static note.thumbnail %}" alt="Class 10th Thumbnail">
+                <a href="{% static note.pdf %}"
+                    class="text-xl sm:text-3xl font-bold my-auto mx-5">{{ note.name }}</a>
             </div>
-        </div>
+            {% endfor %}
+        </div>  
     </div>
 
 </body>
